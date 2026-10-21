@@ -14,7 +14,7 @@ Then open <http://localhost:8000>. You can also open `index.html` directly, alth
 
 ## Replace the placeholder photography
 
-The current vehicle imagery is illustrative Unsplash photography, not a photograph of the Varenzo Executive Lexus. Replace the image URLs in `index.html`, `fleet.html`, and `css/style.css` with approved vehicle and brand images when available. For the fleet page, update the image `alt` text and remove the illustrative-photography label only when it is replaced by a genuine image of the vehicle. Use compressed, appropriately sized WebP or AVIF files in `assets/` for locally hosted production imagery; retain descriptive alt text. The remote Google Fonts and Unsplash images require an internet connection.
+The approved Lexus RX 450h and Infiniti Q50 vehicle photographs are stored locally in `assets/lexus-rx-450h-vehicle.jpg` and `assets/infiniti-q50-awd.jpg`. To update a vehicle image, replace its asset while retaining the same relative path, or update all references in the HTML and CSS. Use compressed, appropriately sized WebP or AVIF files in `assets/` for future production imagery; retain descriptive alt text. The remote Google Fonts and remaining Unsplash images require an internet connection.
 
 ## Update contact information
 

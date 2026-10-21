@@ -116,7 +116,8 @@ h1 em, h2 em { font-weight: 400; color: var(--gold); }
 .page-hero { min-height: 570px; position: relative; display: flex; align-items: end; overflow: hidden; background-size: cover; background-position: center; }
 .page-hero::before { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, rgba(8,8,8,.82), rgba(8,8,8,.32) 75%), linear-gradient(0deg, rgba(8,8,8,.55), transparent 65%); }
 .page-hero-services { background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80"); }
-.page-hero-fleet { background-image: url("https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=2000&q=80"); background-position: center 58%; }
+.page-hero-fleet { background-image: url("../assets/lexus-rx-450h-vehicle.jpg"); background-position: center 58%; }
+.page-hero-fleet::before { background: linear-gradient(90deg, rgba(8,8,8,.82), rgba(8,8,8,.38) 75%), linear-gradient(0deg, rgba(8,8,8,.62), rgba(8,8,8,.08) 65%); }
 .page-hero-corporate { background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"); }
 .page-hero-about { background-image: url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2000&q=80"); }
 .page-hero-contact { background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=80"); }
@@ -143,8 +144,7 @@ h1 em, h2 em { font-weight: 400; color: var(--gold); }
 .fleet-main { padding-top: 90px; padding-bottom: 75px; }
 .fleet-detail { display: grid; grid-template-columns: 1.14fr .86fr; gap: 9%; align-items: center; }
 .fleet-detail-image { position: relative; min-height: 470px; }
-.fleet-detail-image img { width: 100%; height: 470px; object-fit: cover; filter: saturate(.7); }
-.image-label { position: absolute; left: 16px; bottom: 16px; padding: 7px 10px; background: rgba(8,8,8,.72); color: var(--ivory); font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
+.fleet-detail-image img { width: 100%; height: 470px; object-fit: contain; background: #111; }
 .fleet-detail-copy { max-width: 480px; }
 .fleet-detail-copy .eyebrow { color: var(--gold); }
 .fleet-detail-copy > p:not(.eyebrow):not(.fleet-year):not(.small-note) { color: var(--muted); font-size: 11px; }
@@ -300,7 +300,8 @@ h1 em, h2 em { font-weight: 400; color: var(--gold); }
   .fleet-main { padding-top: 55px; padding-bottom: 55px; }
   .fleet-detail { grid-template-columns: 1fr; gap: 36px; }
   .fleet-detail-image { min-height: 0; }
-  .fleet-detail-image img { height: 62vw; min-height: 250px; max-height: 430px; }
+  .fleet-detail-image img { height: auto; aspect-ratio: 1027 / 897; min-height: 0; max-height: none; }
+  .fleet-detail-image.infiniti-image img { aspect-ratio: 1077 / 926; }
   .fleet-detail-copy h2 { font-size: 4.4rem; }
   .section-aside { max-width: 430px; margin: 0; }
   .future-grid { grid-template-columns: 1fr; }
